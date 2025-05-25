@@ -1,15 +1,19 @@
+import "../styles/globals.css";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const inter = localFont({
+  src: "../../public/fonts/Inter-VariableFont_opsz,wght.ttf",
+  style: "normal",
+  variable: "--font-inter",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const kumbhSans = localFont({
+  src: "../../public/fonts/KumbhSans-VariableFont_YOPQ,wght.ttf",
+  style: "normal",
+  variable: "--font-kumbh",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,9 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${kumbhSans.variable} antialiased`}>
         {children}
       </body>
     </html>
