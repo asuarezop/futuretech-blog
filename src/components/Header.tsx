@@ -1,6 +1,6 @@
 import Image from "next/image";
-import FutureTechLogo from "../../public/images/Logo.png";
-import ArrowUpRight from "../../public/icons/arrow-up-right.svg";
+import FutureTechLogo from "../../public/images/Logo.svg";
+import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
 export default function Header() {
   return (
@@ -9,18 +9,15 @@ export default function Header() {
         <h1 className="font-inter text-gray-60 w-[312px] text-[12px]">
           Subscribe to our Newsletter For Blogs and Resources
         </h1>
-        <Image src={ArrowUpRight} width={20} height={20} alt="Up arrow icon" />
+        <ArrowUpRightIcon className="fill-yellow-55 h-5 w-5" />
       </div>
 
-      <div className="bg-dark-10 flex justify-center border-y-1 px-4 py-5">
-        <Image
-          src={FutureTechLogo}
-          width={125}
-          height={35}
-          alt="FutureTech Blog logo"
-        />
+      <div className="bg-dark-10 flex justify-between border-y-1 px-4 py-5">
+        <Image src={FutureTechLogo} alt="FutureTech Blog logo" />
+        <button className="bg-yellow-55 rounded-[6px] px-2.5 py-2.5 text-[14px]">
+          Contact Us
+        </button>
       </div>
-      <div></div>
     </header>
   );
 }
