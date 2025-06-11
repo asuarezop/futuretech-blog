@@ -2,8 +2,8 @@
 @theme {
   /* COLORS */
   --color-*: initial; /* excluding the use of default colors from Tailwind CSS */
-  --color-absolute-white: #fff;
-  --color-absolute-black: #000;
+  --color-white: #fff;
+  --color-black: #000;
   --color-yellow-55: #ffd11a;
   --color-yellow-60: #ffd633;
   --color-yellow-70: #ffe066;
