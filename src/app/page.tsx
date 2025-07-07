@@ -22,6 +22,8 @@ export default function Home() {
           category={headline.category}
           date={headline.date}
           author={headline.author}
+          likes={headline.likes}
+          shares={headline.shares}
         />
       ))}
     </>
