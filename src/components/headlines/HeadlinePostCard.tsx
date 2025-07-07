@@ -2,8 +2,9 @@ import Image from "next/image";
 import { Article } from "@/types/article";
 import { HeartIcon } from "@heroicons/react/16/solid";
 import { ShareIcon } from "@heroicons/react/16/solid";
+import Link from "next/link";
 
-export default function HeadlinePostCard(props: Article) {
+export default async function HeadlinePostCard(props: Article) {
   return (
     <section className="bg-dark-08 px-4 py-10">
       <div>
@@ -46,9 +47,11 @@ export default function HeadlinePostCard(props: Article) {
             {props.shares}
           </button>
         </div>
-        <button className="bg-dark-08 text-gray-60 outline-dark-15 font-inter w-[140px] rounded-[8px] px-5 py-3.5 text-[14px] font-normal outline-1">
-          Read More
-        </button>
+        <Link href={`/posts/${props.title}`}>
+          <button className="bg-dark-08 text-gray-60 outline-dark-15 font-inter w-[140px] rounded-[8px] px-5 py-3.5 text-[14px] font-normal outline-1">
+            Read More
+          </button>
+        </Link>
       </div>
     </section>
   );
