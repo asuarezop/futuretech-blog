@@ -12,6 +12,7 @@ export const headlines: Article[] = [
     likes: "14K",
     shares: "204",
     slug: "global-climate-summit-addresses-urgent-climate-action",
+    isFeatured: true,
   },
   {
     image: "/images/post-2.png",
@@ -23,6 +24,7 @@ export const headlines: Article[] = [
     likes: "2.2K",
     shares: "60",
     slug: "a-decisive-victory-for-progressive-policies",
+    isFeatured: false,
   },
   {
     image: "/images/post-3.png",
@@ -34,6 +36,7 @@ export const headlines: Article[] = [
     likes: "6K",
     shares: "92",
     slug: "tech-giants-unveil-cutting-edge-ai-innovations",
+    isFeatured: false,
   },
   {
     image: "/images/post-4.png",
@@ -45,5 +48,6 @@ export const headlines: Article[] = [
     likes: "10K",
     shares: "124",
     slug: "covid-19-variants",
+    isFeatured: false,
   },
 ];
