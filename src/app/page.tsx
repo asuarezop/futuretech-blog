@@ -1,5 +1,6 @@
 import HeadlinePostCard from "@/components/headlines/HeadlinePostCard";
 import { headlines } from "../mock-data/headlines";
+
 export default function Home() {
   return (
     <>
@@ -24,6 +25,7 @@ export default function Home() {
           author={headline.author}
           likes={headline.likes}
           shares={headline.shares}
+          slug={headline.slug}
         />
       ))}
     </>
