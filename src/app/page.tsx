@@ -27,6 +27,7 @@ export default function Home() {
           shares={headline.shares}
           slug={headline.slug}
           isFeatured={headline.isFeatured}
+          index={headline.index}
         />
       ))}
     </>
