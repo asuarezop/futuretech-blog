@@ -5,4 +5,7 @@ export type Article = {
   category: string;
   date: string;
   author: string;
+  likes?: string;
+  shares?: string;
+  slug: string;
 };
