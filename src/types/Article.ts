@@ -9,4 +9,5 @@ export type Article = {
   shares?: string;
   slug: string;
   isFeatured: boolean;
+  index?: number;
 };
