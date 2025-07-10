@@ -26,6 +26,7 @@ export default function Home() {
           likes={headline.likes}
           shares={headline.shares}
           slug={headline.slug}
+          isFeatured={headline.isFeatured}
         />
       ))}
     </>
