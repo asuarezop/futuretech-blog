@@ -13,6 +13,7 @@ export const headlines: Article[] = [
     shares: "204",
     slug: "global-climate-summit-addresses-urgent-climate-action",
     isFeatured: true,
+    index: 0,
   },
   {
     image: "/images/post-2.png",
@@ -49,5 +50,6 @@ export const headlines: Article[] = [
     shares: "124",
     slug: "covid-19-variants",
     isFeatured: false,
+    index: 3,
   },
 ];
