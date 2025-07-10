@@ -11,5 +11,6 @@ export const headlines: Article[] = [
     author: "Jane Smith",
     likes: "14K",
     shares: "204",
+    slug: "global-climate-summit-addresses-urgent-climate-action",
   },
 ];
