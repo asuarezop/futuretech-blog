@@ -43,17 +43,17 @@ export default async function HeadlinePostCard(props: Article) {
           </div>
           <div className="flex justify-between">
             <div className="flex w-40 items-center justify-between">
-              <button className="text-gray-60 bg-dark-10 font-kumbh outline-dark-15 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1">
+              <button className="text-gray-60 hover:bg-dark-20 bg-dark-10 font-kumbh outline-dark-15 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
                 <HeartIcon className="mr-1 h-5 w-5" />
                 {props.likes}
               </button>
-              <button className="text-gray-60 font-kumbh bg-dark-10 outline-dark-15 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1">
+              <button className="text-gray-60 hover:bg-dark-20 font-kumbh bg-dark-10 outline-dark-15 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
                 <ShareIcon className="fill-dark-40 mr-1 h-5 w-5" />
                 {props.shares}
               </button>
             </div>
             <Link href={`/posts/${props.slug}`}>
-              <button className="bg-dark-08 text-gray-60 outline-dark-15 font-inter w-[140px] rounded-[8px] px-5 py-3.5 text-[14px] font-normal outline-1">
+              <button className="bg-dark-08 text-gray-60 outline-dark-15 font-inter hover:bg-dark-20 w-[140px] rounded-[8px] px-5 py-3.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
                 Read More
               </button>
             </Link>
@@ -84,17 +84,17 @@ export default async function HeadlinePostCard(props: Article) {
           </div>
           <div className="flex justify-between">
             <div className="flex w-40 items-center">
-              <button className="text-gray-60 bg-dark-10 font-kumbh outline-dark-15 mr-2 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1">
+              <button className="text-gray-60 hover:bg-dark-20 bg-dark-10 font-kumbh outline-dark-15 mr-2 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
                 <HeartIcon className="mr-1 h-5 w-5" />
                 {props.likes}
               </button>
-              <button className="text-gray-60 font-kumbh bg-dark-10 outline-dark-15 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1">
+              <button className="text-gray-60 hover:bg-dark-20 font-kumbh bg-dark-10 outline-dark-15 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
                 <ShareIcon className="fill-dark-40 mr-1 h-5 w-5" />
                 {props.shares}
               </button>
             </div>
             <Link href={`/posts/${props.slug}`}>
-              <button className="bg-dark-08 text-gray-60 outline-dark-15 font-inter flex w-[135px] justify-between rounded-[8px] px-5 py-3.5 text-[14px] font-normal outline-1">
+              <button className="bg-dark-08 text-gray-60 outline-dark-15 font-inter hover:bg-dark-20 flex w-[135px] justify-between rounded-[8px] px-5 py-3.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
                 Read More
                 <ArrowUpRightIcon className="fill-yellow-55 h-5 w-5" />
               </button>
