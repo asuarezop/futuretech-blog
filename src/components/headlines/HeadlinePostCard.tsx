@@ -9,54 +9,58 @@ export default async function HeadlinePostCard(props: Article) {
   return (
     <>
       {props.isFeatured ? (
-        <section className="bg-dark-08 border-dark-15 border-y-1 px-4 py-10 xl:px-20">
-          <div>
-            <Image
-              src={props.image}
-              alt="post-img"
-              width={390}
-              height={213}
-              className="mb-[1.875rem] rounded-xl"
-            />
-          </div>
-          <div className="mb-5">
-            <h2 className="mb-2 text-xl font-semibold text-white">
-              {props.title}
-            </h2>
-            <p className="text-gray-60 text-base leading-6 font-normal tracking-tight">
-              {props.description}
-            </p>
-          </div>
-          <div className="mb-6 flex w-[320px] justify-between text-[14px]">
-            <div>
-              <h3 className="text-gray-60">Category</h3>
-              <p className="text-white">{props.category}</p>
+        <section className="bg-dark-08 border-dark-15 border-y-1 px-4 py-10 xl:px-20 xl:py-16">
+          <div className="xl:flex xl:items-center xl:justify-between">
+            <div className="">
+              <Image
+                src={props.image}
+                alt="post-img"
+                width={390}
+                height={213}
+                className="mb-[1.875rem] rounded-xl xl:mb-0"
+              />
             </div>
-            <div>
-              <h3 className="text-gray-60">Publication Date</h3>
-              <p className="text-white">{props.date}</p>
+            <div className="xl:w-[680px]">
+              <div className="mb-5">
+                <h2 className="mb-2 font-semibold text-white xl:text-[24px]">
+                  {props.title}
+                </h2>
+                <p className="text-gray-60 text-base leading-6 font-normal tracking-tight xl:text-[18px]">
+                  {props.description}
+                </p>
+              </div>
+              <div className="mb-6 flex w-[320px] justify-between text-[14px] xl:w-[360px] xl:text-[16px]">
+                <div>
+                  <h3 className="text-gray-60">Category</h3>
+                  <p className="text-white">{props.category}</p>
+                </div>
+                <div>
+                  <h3 className="text-gray-60">Publication Date</h3>
+                  <p className="text-white">{props.date}</p>
+                </div>
+                <div>
+                  <h3 className="text-gray-60">Author</h3>
+                  <p className="text-white">{props.author}</p>
+                </div>
+              </div>
+              <div className="flex justify-between">
+                <div className="flex w-40 items-center justify-between">
+                  <button className="text-gray-60 hover:bg-dark-20 bg-dark-10 font-kumbh outline-dark-15 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
+                    <HeartIcon className="mr-1 h-5 w-5" />
+                    {props.likes}
+                  </button>
+                  <button className="text-gray-60 hover:bg-dark-20 font-kumbh bg-dark-10 outline-dark-15 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
+                    <ShareIcon className="fill-dark-40 mr-1 h-5 w-5" />
+                    {props.shares}
+                  </button>
+                </div>
+                <Link href={`/posts/${props.slug}`}>
+                  <button className="bg-dark-08 text-gray-60 outline-dark-15 font-inter hover:bg-dark-20 w-[140px] rounded-[8px] px-5 py-3.5 text-[14px] font-normal outline-1 hover:cursor-pointer xl:w-[115px]">
+                    Read More
+                  </button>
+                </Link>
+              </div>
             </div>
-            <div>
-              <h3 className="text-gray-60">Author</h3>
-              <p className="text-white">{props.author}</p>
-            </div>
-          </div>
-          <div className="flex justify-between">
-            <div className="flex w-40 items-center justify-between">
-              <button className="text-gray-60 hover:bg-dark-20 bg-dark-10 font-kumbh outline-dark-15 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
-                <HeartIcon className="mr-1 h-5 w-5" />
-                {props.likes}
-              </button>
-              <button className="text-gray-60 hover:bg-dark-20 font-kumbh bg-dark-10 outline-dark-15 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
-                <ShareIcon className="fill-dark-40 mr-1 h-5 w-5" />
-                {props.shares}
-              </button>
-            </div>
-            <Link href={`/posts/${props.slug}`}>
-              <button className="bg-dark-08 text-gray-60 outline-dark-15 font-inter hover:bg-dark-20 w-[140px] rounded-[8px] px-5 py-3.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
-                Read More
-              </button>
-            </Link>
           </div>
         </section>
       ) : (
