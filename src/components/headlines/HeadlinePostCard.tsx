@@ -9,7 +9,7 @@ export default async function HeadlinePostCard(props: Article) {
   return (
     <>
       {props.isFeatured ? (
-        <section className="bg-dark-08 border-dark-15 border-y-1 px-4 py-10">
+        <section className="bg-dark-08 border-dark-15 border-y-1 px-4 py-10 xl:px-20">
           <div>
             <Image
               src={props.image}
