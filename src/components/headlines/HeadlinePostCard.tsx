@@ -30,7 +30,7 @@ export default async function HeadlinePostCard(props: Article) {
             </p>
           </div>
         </div>
-        <div className="flex w-[390px] justify-between gap-4">
+        <div className="flex justify-between gap-4 xl:w-[390px]">
           <div className="flex w-[155px] items-center">
             <button className="text-gray-60 hover:bg-dark-20 bg-dark-10 font-kumbh outline-dark-15 mr-2 flex rounded-[100px] px-3.5 py-1.5 text-[14px] font-normal outline-1 hover:cursor-pointer">
               <HeartIcon className="mr-1 h-5 w-5" />
