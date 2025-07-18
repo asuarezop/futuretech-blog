@@ -19,24 +19,14 @@ export default async function HeadlinePostCard(props: Article) {
           />
         </div>
 
-        {/* <div className="relative pt-10 sm:hidden xl:mb-5 xl:h-[185px] xl:w-[390px] xl:pt-0">
-          <Image
-            src={props.image}
-            alt="post-img"
-            fill
-            objectFit="cover"
-            className="rounded-[10px]"
-          />
-        </div> */}
-
         <div className="w-[358px] xl:w-[407px]">
           <h2 className="mb-1 text-[16px] font-semibold text-white">
             {props.title}
           </h2>
         </div>
-        <div className="mb-3 w-[320px] text-[14px]">
+        <div className="mb-3 w-[320px]">
           <div>
-            <p className="text-gray-60 text-[14px] font-normal">
+            <p className="text-gray-60 text-[14px] font-normal xl:text-[16px]">
               {props.category}
             </p>
           </div>
