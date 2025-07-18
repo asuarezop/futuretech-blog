@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Article } from "@/types/article";
+import { Article } from "@/types/Article";
 import { HeartIcon } from "@heroicons/react/16/solid";
 import { ShareIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";

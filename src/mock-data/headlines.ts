@@ -1,4 +1,4 @@
-import { Article } from "@/types/article";
+import { Article } from "@/types/Article";
 
 export const headlines: Article[] = [
   {
@@ -26,6 +26,7 @@ export const headlines: Article[] = [
     shares: "60",
     slug: "a-decisive-victory-for-progressive-policies",
     isFeatured: false,
+    index: 1,
   },
   {
     image: "/images/post-3.png",
@@ -38,6 +39,7 @@ export const headlines: Article[] = [
     shares: "92",
     slug: "tech-giants-unveil-cutting-edge-ai-innovations",
     isFeatured: false,
+    index: 2,
   },
   {
     image: "/images/post-4.png",

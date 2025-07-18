@@ -8,6 +8,6 @@ export type Article = {
   likes?: string;
   shares?: string;
   slug: string;
-  isFeatured: boolean;
+  isFeatured?: boolean;
   index?: number;
 };
